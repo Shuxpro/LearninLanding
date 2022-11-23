@@ -11,6 +11,7 @@ import cleancss from 'gulp-clean-css';
 const bsInstance = browserSync.create();
 const outputPath = './dist';
 
+
 function browsersync() {
     bsInstance.init({
         server: { baseDir: outputPath },
@@ -34,6 +35,7 @@ function styles() {
         .pipe(gulp.dest(outputPath))
         .pipe(bsInstance.stream());
 }
+
 
 function startwatch() {
     gulp.watch('app/*.html').on('change', () => {
