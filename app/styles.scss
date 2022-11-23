@@ -98,16 +98,16 @@ header {
         .content {
             padding-inline: 0px;
         }
-        
     }
 
     .menu{
+        padding-bottom: 40px;
         display: flex;
         justify-content: center;
         color: white;
         .menu-item{
             text-decoration: none; 
-            padding: 20px 40px;
+            padding-inline: 40px;
             color: var(--text-title);
             transition: 0.5s;
         }
@@ -175,6 +175,15 @@ main {
 
         @media (prefers-color-scheme: dark) {
             background-image: linear-gradient(#101c4e, #2d4e4d, #47749e);
+        }
+
+        @media (max-width: 1200px) {
+            .box-main {
+                width: auto;
+                padding-inline: 25px;
+            }
+            
+            
         }
     }
 }
